@@ -1,0 +1,59 @@
+// .btn{
+//     padding: 10px 30px;
+//     text-align: center;
+//     color: $black;
+//     background-color: $primary;
+//     cursor: pointer;
+//     transition: all .3s ease;
+//     &.primary{
+//         background-color: $primary;
+//     &:hover{
+//         background-color: darkblue($primary , 10);
+//         color: $white;
+//         }
+//     };
+//     &.secondary{
+//         background-color: $secondary;
+//     }
+//     &.warning{
+//         background-color: $warning;
+//     }
+//     &.error{
+//         background-color: $error;
+
+//     }
+//     &.outline{
+//         border: 1px solid $primary;
+//         background-color: initial;
+//         color: $primary;   
+//     }
+//     &.radius{
+//         border-radius: $border-radius-3;
+//     }
+
+// }   
+
+@mixin btn($class , $bgc, $bdr:null){
+    .btn {
+        padding: 10px 30px;
+        text-align: center;
+        color : $black;
+        cursor: pointer;
+        transition: all .3s ease;   
+        &.#{$class}{
+          border-radius: $bdr;
+          background-color: $bgc;
+          &:hover {
+            background-color: darken($bgc , 10);
+            color: $white;
+         }
+        }
+      }
+    }  
+    
+    @include btn(primary , $primary, 10px);
+    @include btn(secondary , $secondary, 20px);
+    @include btn(warning , $warning, 10px);
+    @include btn(error , $error, 20px);
+
+    

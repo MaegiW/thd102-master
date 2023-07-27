@@ -1,0 +1,130 @@
+// base
+@import 'base/base';
+@import 'base/color';
+@import 'base/font';
+@import 'base/spacing';
+
+// mixin
+@import 'mixin/mixins';
+
+// component
+@import 'component/btn';
+@import 'component/form';
+@import 'component/table';
+@import 'component/title';
+
+// layout
+@import 'layout/body';
+
+// page
+@import 'page/index';
+@import 'page/about';
+
+// plugin
+
+
+
+
+//mixin
+.box {
+    @include center(100px, 100px);
+}
+
+.box_default {
+    @include center(150px, 150px);
+}
+
+.box_large {
+    @include center(300px, 300px);
+}
+
+.card {
+    @include rect(100px, 100px);
+}
+
+
+// @mixin fontDefault($f){
+//     font-size: $f;
+//     @content;
+// }
+
+// .titles {
+//    @include fontDefault(30px)
+// }
+
+//手機板
+@mixin m() {
+    @media screen and (max-width: $m) {
+        @content;
+    }
+}
+
+//平板
+@mixin t() {
+    @media screen and (max-width: $t) {
+        @content;
+    }
+}
+
+
+h1 {
+    font-size: 40px;
+    color: #333;
+
+    @include t() {
+        font-size: 60px;
+        color: #2e3fff
+    }
+
+    @include m() {
+        font-size: 90px;
+        color: rgb(255, 0, 191)
+    }
+}
+
+
+@mixin push($num , $dir){
+    @for $i from 1 through $num{
+        .push#{$dir}-#{$i} {
+            position: relative;
+            #{$dir}: $i * 1px;
+        }
+
+    } 
+}
+
+@include push(20, left);
+@include push(20, top);
+
+.col-1{
+    width: 8.333333%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+
+@for $i from 1 through 12{
+    .col-#{$i}{
+        width: ($i / $num) * 100%;
+    }
+}
+
+
+
+
+
+
+// .col-1 { width: 8.333333%;}
+// .col-2 { width: 16.666666%;}
+// .col-3 { width: 25%;}
+// .col-4 {width: 33.333333%;}
+// .col-5 { width: 41.666666%;}
+// .col-6 { width: 50%;}
+// .col-7 { width: 58.333333%;}
+// .col-8 { width: 66.666666%;}
+// .col-9 { width: 75%;}
+// .col-10 { width: 83.333333%;}
+// .col-11 { width: 91.666666%;}
+// .col-12 {width: 100%;}

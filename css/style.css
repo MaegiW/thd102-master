@@ -1,0 +1,434 @@
+@charset "UTF-8";
+/*css 註解*/
+.btn {
+  padding: 10px 30px;
+  text-align: center;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn.primary {
+  border-radius: 10px;
+  background-color: #1964ab;
+}
+.btn.primary:hover {
+  background-color: #124a7f;
+  color: #F6F6F6;
+}
+
+.btn {
+  padding: 10px 30px;
+  text-align: center;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn.secondary {
+  border-radius: 20px;
+  background-color: #64357a;
+}
+.btn.secondary:hover {
+  background-color: #472656;
+  color: #F6F6F6;
+}
+
+.btn {
+  padding: 10px 30px;
+  text-align: center;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn.warning {
+  border-radius: 10px;
+  background-color: #ab7825;
+}
+.btn.warning:hover {
+  background-color: #815b1c;
+  color: #F6F6F6;
+}
+
+.btn {
+  padding: 10px 30px;
+  text-align: center;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn.error {
+  border-radius: 20px;
+  background-color: #a82121;
+}
+.btn.error:hover {
+  background-color: #7d1919;
+  color: #F6F6F6;
+}
+
+h1.title {
+  font-size: 36px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #F6F6F6;
+}
+
+.wrapper {
+  width: 100%;
+}
+.wrapper header {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper header h1.logo {
+  width: 150px;
+  height: 80px;
+  background-color: #00ff95;
+}
+.wrapper header nav ul {
+  list-style: none;
+  display: flex;
+}
+.wrapper header nav ul li {
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #794300;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.wrapper header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.wrapper header nav ul li:hover {
+  background-color: #ffe600;
+}
+.wrapper header nav ul li:nth-child(2) {
+  background-color: #2fff00;
+}
+.wrapper header nav ul li:nth-child(2):hover {
+  background-color: #ca5800;
+}
+.wrapper footer {
+  width: 90%;
+  margin: auto;
+  background-color: #ffc801;
+}
+
+.w30 {
+  width: 30%;
+  margin: auto;
+}
+
+.index .container .banner {
+  background-image: url("https://img.freepik.com/free-photo/close-up-metallic-wine-barrels-winery_1268-15697.jpg?w=1060&t=st=1690170519~exp=1690171119~hmac=fa7730dc401814ee0a0fbd4b42d0f55133e987cafa95a1d572a2ffcc97ca8551");
+  width: 100%;
+  height: 500px;
+}
+
+.about .container {
+  width: 100%;
+}
+
+.box {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+.box_default {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+}
+
+.box_large {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #333;
+}
+@media screen and (max-width: 996px) {
+  h1 {
+    font-size: 60px;
+    color: #2e3fff;
+  }
+}
+@media screen and (max-width: 428px) {
+  h1 {
+    font-size: 90px;
+    color: rgb(255, 0, 191);
+  }
+}
+
+.pushleft-1 {
+  position: relative;
+  left: 1px;
+}
+
+.pushleft-2 {
+  position: relative;
+  left: 2px;
+}
+
+.pushleft-3 {
+  position: relative;
+  left: 3px;
+}
+
+.pushleft-4 {
+  position: relative;
+  left: 4px;
+}
+
+.pushleft-5 {
+  position: relative;
+  left: 5px;
+}
+
+.pushleft-6 {
+  position: relative;
+  left: 6px;
+}
+
+.pushleft-7 {
+  position: relative;
+  left: 7px;
+}
+
+.pushleft-8 {
+  position: relative;
+  left: 8px;
+}
+
+.pushleft-9 {
+  position: relative;
+  left: 9px;
+}
+
+.pushleft-10 {
+  position: relative;
+  left: 10px;
+}
+
+.pushleft-11 {
+  position: relative;
+  left: 11px;
+}
+
+.pushleft-12 {
+  position: relative;
+  left: 12px;
+}
+
+.pushleft-13 {
+  position: relative;
+  left: 13px;
+}
+
+.pushleft-14 {
+  position: relative;
+  left: 14px;
+}
+
+.pushleft-15 {
+  position: relative;
+  left: 15px;
+}
+
+.pushleft-16 {
+  position: relative;
+  left: 16px;
+}
+
+.pushleft-17 {
+  position: relative;
+  left: 17px;
+}
+
+.pushleft-18 {
+  position: relative;
+  left: 18px;
+}
+
+.pushleft-19 {
+  position: relative;
+  left: 19px;
+}
+
+.pushleft-20 {
+  position: relative;
+  left: 20px;
+}
+
+.pushtop-1 {
+  position: relative;
+  top: 1px;
+}
+
+.pushtop-2 {
+  position: relative;
+  top: 2px;
+}
+
+.pushtop-3 {
+  position: relative;
+  top: 3px;
+}
+
+.pushtop-4 {
+  position: relative;
+  top: 4px;
+}
+
+.pushtop-5 {
+  position: relative;
+  top: 5px;
+}
+
+.pushtop-6 {
+  position: relative;
+  top: 6px;
+}
+
+.pushtop-7 {
+  position: relative;
+  top: 7px;
+}
+
+.pushtop-8 {
+  position: relative;
+  top: 8px;
+}
+
+.pushtop-9 {
+  position: relative;
+  top: 9px;
+}
+
+.pushtop-10 {
+  position: relative;
+  top: 10px;
+}
+
+.pushtop-11 {
+  position: relative;
+  top: 11px;
+}
+
+.pushtop-12 {
+  position: relative;
+  top: 12px;
+}
+
+.pushtop-13 {
+  position: relative;
+  top: 13px;
+}
+
+.pushtop-14 {
+  position: relative;
+  top: 14px;
+}
+
+.pushtop-15 {
+  position: relative;
+  top: 15px;
+}
+
+.pushtop-16 {
+  position: relative;
+  top: 16px;
+}
+
+.pushtop-17 {
+  position: relative;
+  top: 17px;
+}
+
+.pushtop-18 {
+  position: relative;
+  top: 18px;
+}
+
+.pushtop-19 {
+  position: relative;
+  top: 19px;
+}
+
+.pushtop-20 {
+  position: relative;
+  top: 20px;
+}
+
+.col-1 {
+  width: 8.333333%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-1 {
+  width: 1/sum;
+}
+
+.col-2 {
+  width: 2/sum;
+}
+
+.col-3 {
+  width: 3/sum;
+}
+
+.col-4 {
+  width: 4/sum;
+}
+
+.col-5 {
+  width: 5/sum;
+}
+
+.col-6 {
+  width: 6/sum;
+}
+
+.col-7 {
+  width: 7/sum;
+}
+
+.col-8 {
+  width: 8/sum;
+}
+
+.col-9 {
+  width: 9/sum;
+}
+
+.col-10 {
+  width: 10/sum;
+}
+
+.col-11 {
+  width: 11/sum;
+}
+
+.col-12 {
+  width: 12/sum;
+}/*# sourceMappingURL=style.css.map */
